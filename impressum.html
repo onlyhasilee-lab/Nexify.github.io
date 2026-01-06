@@ -1,0 +1,110 @@
+<!-- =========================
+     impressum.html (Deutschland)
+     ========================= -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Impressum – Nexify</title>
+  <style>
+    :root{
+      --bg:#0b1020; --bg2:#020617; --card:#0f172a; --text:#e5e7eb; --muted:#9ca3af;
+      --accent:#3b82f6; --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: linear-gradient(180deg, var(--bg2), var(--bg));
+      color:var(--text); line-height:1.55;
+    }
+    header{padding:44px 18px 20px; text-align:center}
+    header h1{margin:0 0 8px; font-size:28px}
+    header p{margin:0; color:var(--muted)}
+    main{max-width:920px; margin:0 auto; padding:18px}
+    .card{
+      background:rgba(15,23,42,.92);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      margin:14px 0;
+    }
+    h2{margin:0 0 10px; font-size:18px}
+    p{margin:8px 0}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    code{background:#111827; padding:2px 6px; border-radius:8px; border:1px solid #1f2937}
+    .muted{color:var(--muted)}
+    .note{border-left:3px solid var(--accent); padding:10px 12px; background:#0b122a; border-radius:12px}
+    footer{padding:26px 18px 40px; text-align:center; color:var(--muted); font-size:12px}
+    .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .btn{
+      display:inline-block; padding:10px 12px; border-radius:14px; border:1px solid var(--border);
+      color:var(--text); text-decoration:none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Impressum – Nexify</h1>
+    <p>Stand: <strong>[TT.MM.JJJJ]</strong></p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <p><strong>[Dein Name / Firmenname]</strong></p>
+      <p>[Straße Hausnummer]</p>
+      <p>[PLZ Ort]</p>
+      <p>[Land]</p>
+
+      <div class="links">
+        <a class="btn" href="./privacy.html">Datenschutzerklärung</a>
+        <a class="btn" href="./index.html">Start</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:[deine-email@domain.de]">[deine-email@domain.de]</a></p>
+      <p class="muted">Telefon (optional): [Telefonnummer]</p>
+    </section>
+
+    <section class="card">
+      <h2>Verantwortlich für den Inhalt</h2>
+      <p><strong>[Dein Name / Firmenname]</strong> (Anschrift wie oben)</p>
+    </section>
+
+    <section class="card">
+      <h2>Haftungshinweise</h2>
+      <div class="note">
+        <p><strong>Haftung für Inhalte:</strong> Die Inhalte dieser Seiten wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität wird jedoch keine Gewähr übernommen.</p>
+        <p><strong>Haftung für Links:</strong> Sofern externe Links vorhanden sind, liegt die Verantwortung für deren Inhalte bei den jeweiligen Betreibern. Eine permanente inhaltliche Kontrolle ist ohne konkrete Anhaltspunkte nicht zumutbar.</p>
+      </div>
+      <p class="muted">Hinweis: Bitte passe diese Standardtexte an deine Situation an.</p>
+    </section>
+
+    <section class="card">
+      <h2>Urheberrecht</h2>
+      <p>Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht. Downloads/Kopien sind nur für den privaten Gebrauch gestattet, sofern nicht anders angegeben.</p>
+    </section>
+
+    <section class="card">
+      <h2>Nexify App – Hinweis</h2>
+      <p>Nexify verarbeitet Dateien lokal auf dem Gerät. Konvertiere bitte nur Dateien, für die du die notwendigen Rechte besitzt.</p>
+      <p class="muted">Ausgaben werden lokal unter <code>Music/Nexify</code> gespeichert.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Nexify · Impressum
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
