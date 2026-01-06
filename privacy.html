@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Datenschutzerklärung – Nexify</title>
+  <style>
+    :root{
+      --bg:#0b1020; --bg2:#020617; --card:#0f172a; --text:#e5e7eb; --muted:#9ca3af;
+      --accent:#3b82f6; --ok:#22c55e; --warn:#f59e0b; --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: linear-gradient(180deg, var(--bg2), var(--bg));
+      color:var(--text); line-height:1.55;
+    }
+    header{padding:44px 18px 20px; text-align:center}
+    header h1{margin:0 0 8px; font-size:28px; letter-spacing:.2px}
+    header p{margin:0; color:var(--muted)}
+    main{max-width:920px; margin:0 auto; padding:18px}
+    .card{
+      background:rgba(15,23,42,.92);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      margin:14px 0;
+    }
+    h2{margin:0 0 10px; font-size:18px}
+    h3{margin:14px 0 8px; font-size:15px; color:#f3f4f6}
+    p{margin:8px 0}
+    ul{margin:8px 0 0 18px; color:var(--text)}
+    li{margin:6px 0}
+    code{background:#111827; padding:2px 6px; border-radius:8px; border:1px solid #1f2937}
+    .muted{color:var(--muted)}
+    .pill{
+      display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid var(--border);
+      color:var(--muted); font-size:12px; margin-left:8px;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    footer{padding:26px 18px 40px; text-align:center; color:var(--muted)}
+    .note{border-left:3px solid var(--accent); padding:10px 12px; background:#0b122a; border-radius:12px}
+    .ok{color:var(--ok)}
+    .warn{color:var(--warn)}
+    .grid{display:grid; grid-template-columns:1fr; gap:12px}
+    @media (min-width: 860px){ .grid{grid-template-columns:1fr 1fr} }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Datenschutzerklärung – Nexify</h1>
+    <p>Stand: <strong>[TT.MM.JJJJ]</strong> <span class="pill">Offline / On-Device</span></p>
+    <p class="muted">Diese Erklärung beschreibt, wie die App <strong>Nexify</strong> mit Daten umgeht.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1. Verantwortlicher</h2>
+      <p><strong>[Dein Name oder Firmenname]</strong></p>
+      <p>E-Mail: <a href="mailto:[deine-email@domain.de]">[deine-email@domain.de]</a></p>
+      <p class="muted">Adresse (optional): [Straße, PLZ, Ort, Land]</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Kurzüberblick</h2>
+      <div class="note">
+        <p><strong class="ok">Nexify verarbeitet ausgewählte Dateien ausschließlich lokal auf deinem Gerät.</strong></p>
+        <p class="muted">Es gibt <strong>keine Uploads</strong> zu Servern, <strong>kein Tracking</strong> und <strong>keine Werbung</strong> – sofern du die App unverändert so nutzt, wie hier beschrieben.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Welche Daten werden verarbeitet?</h2>
+      <div class="grid">
+        <div>
+          <h3>3.1 Ausgewählte Dateien (Inhalte)</h3>
+          <p>Wenn du Dateien in Nexify auswählst, verarbeitet die App diese Inhalte ausschließlich, um die von dir gewünschte Konvertierung durchzuführen.</p>
+          <ul>
+            <li>Dateiinhalt (z. B. Audio) <span class="muted">– nur zur Konvertierung</span></li>
+            <li>Dateiinformationen (z. B. Dateiname) <span class="muted">– zur Anzeige &amp; Benennung der Ausgabedatei</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>3.2 Keine Datenerhebung darüber hinaus</h3>
+          <p>Nexify erhebt und speichert keine personenbezogenen Daten wie z. B. Name, Standort, Kontakte oder Geräte-ID (außer das Betriebssystem stellt solche Informationen für die reine Dateiauswahl bereit).</p>
+          <p class="muted">Wenn du später Analytics/Crash-Tools oder Werbung integrierst, muss diese Datenschutzerklärung entsprechend erweitert werden.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4. Dateizugriff (Android-Dateiauswahl) &amp; Berechtigungen</h2>
+      <p>Nexify nutzt den Android-Dateiauswahldialog (Storage Access Framework / Document Picker). Dadurch erhält die App Zugriff <strong>nur</strong> auf Dateien oder Ordner, die du aktiv auswählst.</p>
+      <ul>
+        <li>Du wählst Dateien über „Add audio“ aus oder importierst Ordner über „Import folder“.</li>
+        <li>Nexify benötigt dafür keine „All files access“ Berechtigung.</li>
+      </ul>
+      <p class="muted">Hinweis: Wenn du einen Ordner importierst und dauerhafte Leserechte vergibst, kann Android der App Zugriff auf diesen Ordner erlauben, bis du die Berechtigung entziehst.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Speicherung der Ausgabedateien</h2>
+      <p>Ausgabedateien speichert Nexify lokal auf deinem Gerät in:</p>
+      <p><code>Music/Nexify</code></p>
+      <p>Die Originaldateien bleiben dabei unverändert am ursprünglichen Speicherort.</p>
+
+      <h3>5.1 Temporäre Dateien</h3>
+      <p>Während der Konvertierung kann Nexify temporäre Dateien anlegen (Zwischenspeicher), um die Konvertierung technisch durchzuführen. Diese temporären Dateien werden nach Abschluss möglichst entfernt.</p>
+      <p class="muted">Sollte ein Konvertierungsvorgang unerwartet abbrechen, kann es in seltenen Fällen vorkommen, dass eine temporäre Datei zurückbleibt. Du kannst sie dann im App-Speicher oder über den Dateimanager löschen.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Weitergabe an Dritte</h2>
+      <p><strong>Nexify gibt keine Daten an Dritte weiter</strong> und überträgt keine ausgewählten Dateien an Server.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Tracking, Werbung, Analytics</h2>
+      <p class="ok"><strong>Standardmäßig:</strong> keine Werbung, kein Tracking, keine Analytics.</p>
+      <p class="muted">Falls zukünftig Dienste wie Firebase Analytics/Crashlytics, Sentry oder Werbe-SDKs eingesetzt werden, werden dabei ggf. Daten verarbeitet. In dem Fall wird diese Datenschutzerklärung angepasst und – sofern nötig – eine Einwilligung eingeholt.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Rechtsgrundlagen (GDPR/DSGVO)</h2>
+      <p>Die Verarbeitung der von dir ausgewählten Dateien erfolgt, um die von dir gewünschte Funktion (Konvertierung) bereitzustellen. Je nach Einordnung kann dies insbesondere auf folgenden Grundlagen beruhen:</p>
+      <ul>
+        <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (Vertrag/vertragliche Maßnahmen – Bereitstellung der App-Funktion), und/oder</li>
+        <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> (berechtigtes Interesse – technisch notwendige Verarbeitung zur Funktionsbereitstellung).</li>
+      </ul>
+      <p class="muted">Hinweis: Da die Verarbeitung lokal auf deinem Gerät stattfindet und keine Übermittlung an Server erfolgt, ist das Risiko für deine Daten besonders gering.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Deine Rechte</h2>
+      <p>Du hast – je nach Anwendbarkeit – Rechte nach der DSGVO (z. B. Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch).</p>
+      <p>Da Nexify typischerweise keine personenbezogenen Daten serverseitig speichert, kannst du in der Praxis vieles direkt selbst steuern, z. B. durch Löschen der Ausgabedateien in <code>Music/Nexify</code>.</p>
+      <p>Für Fragen: <a href="mailto:[deine-email@domain.de]">[deine-email@domain.de]</a></p>
+    </section>
+
+    <section class="card">
+      <h2>10. Open-Source-Komponenten</h2>
+      <p>Nexify verwendet Open-Source-Bibliotheken (z. B. AndroidX). Informationen zu verwendeten Lizenzen können in der App unter „Open Source Licenses“ angezeigt werden.</p>
+      <p class="muted">Wenn du den Lizenz-Screen eingebaut hast, ist das für App-Review und Transparenz ideal.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. Änderungen dieser Datenschutzerklärung</h2>
+      <p>Wenn Nexify weiterentwickelt wird (z. B. neue Formate, neue Funktionen oder zusätzliche SDKs), kann diese Datenschutzerklärung aktualisiert werden.</p>
+      <p class="muted">Das Datum oben („Stand“) wird dann angepasst.</p>
+    </section>
+
+    <section class="card">
+      <h2>12. Kontakt</h2>
+      <p>Datenschutz-Anfragen bitte an:</p>
+      <p><strong>[Dein Name/Firma]</strong> – <a href="mailto:[deine-email@domain.de]">[deine-email@domain.de]</a></p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Nexify · <span class="muted">Privacy Policy</span></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+      </html>
